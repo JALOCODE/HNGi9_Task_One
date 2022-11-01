@@ -3,7 +3,7 @@ const links = [
         linkText: "Twitter Link",
         linkID: "twitter-link",
         key: 1,
-        linkTo: "https://twitter.com/egohaudu"
+        linkTo: "https://twitter.com/auduegoh"
     },
     {
         linkText: "Zuri Team",
