@@ -3,7 +3,7 @@ const links = [
         linkText: "Twitter Link",
         linkID: "twitter-link",
         key: 1,
-        linkTo: "https://twitter.com/demiicoder"
+        linkTo: "https://twitter.com/egohaudu"
     },
     {
         linkText: "Zuri Team",
@@ -21,7 +21,7 @@ const links = [
         linkText: "Python Books",
         linkID: "book__python",
         key: 4,
-        linkTo: "https://books.zuri.team/python-for-beginners?ref_id=David_Oga"
+        linkTo: "https://books.zuri.team/python-for-beginners?ref_id=EGOH_WISDOM"
     },
     {
         linkText: "Background Check for Coders",
