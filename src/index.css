@@ -2,7 +2,7 @@
 
 :root {
 
-/* this is a color palette */
+/* color palette */
 --text-grey-900:#101828;
 --text-grey-500: #667085;
 --link-bg: #EAECF0;
@@ -36,7 +36,7 @@ main {
     margin-right: 1rem;
 }
 
-/* This contains the Profile section styling */
+/* Profile section styling */
 
 .profile {
     display: flex;
@@ -63,9 +63,9 @@ main {
     display: none;
 }
 
-/* Profile section styling terminates here */
+/* Profile section styling ends here */
 
-/* Links styling begins here */
+/* Links styling starts here */
 
 .links {
   display: flex;
@@ -94,9 +94,9 @@ main {
   color: var(--text-grey-500);
 }
 
-/* links styling terminates here */
+/* Links styling ends here */
 
-/* social section styling begins here */
+/* social section styling */
 
 .social {
   margin-bottom: 150px;
@@ -107,10 +107,10 @@ main {
   cursor: pointer;
 }
 
-/* social section styling terminates here */
+/* social section styling ends here */
 
 
-/* Footer styling begins here */
+/* Footer styling */
 
 .footer-content {
   display: flex;
@@ -136,10 +136,140 @@ main {
   background-color: var(--link-bg);
 }
 
-/* The footer styling terminates here */
+/* Footer styling ends here */
+
+/* Contact page styling starts here */
+
+.contact-section {
+  text-align: start;
+  margin-top: 30px;
+}
+
+.contact-heading h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+
+.contact-heading p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #475467;
+  margin-bottom: 30px;
+}
+
+form {
+  margin-bottom: 6rem;
+  display: grid;
+}
+
+.name {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+form label{
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 6px;
+  color: #667085;
+}
+
+.input::placeholder {
+  padding-left: 14px;
+}
+
+input {
+  padding: 10px 14px;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.radio {
+  align-items: center;
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.radio input {
+  display: flex;
+}
+
+.radio label {
+  padding-left: 10px;
+  width: 100%;
+}
+
+/* input:invalid ~ span {
+  display: block;
+} */
+
+button:hover {
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 30px;
+}
+
+textarea {
+  padding: 1rem;
+}
+
+.field span {
+  display: none;
+  color: red;
+  font-size: 12px;
+  padding-top: 3px;
+  font-weight: 200;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid #1570EF;
+}
+
+textarea {
+  width: 720px;
+  height: 132px;
+  resize: none;
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+textarea::placeholder {
+  font-family: inter;
+  font-weight: 400;
+}
+
+.message {
+  margin-top: 14px;
+  margin-bottom: 24px;
+}
+
+.form-btn {
+  padding-top: 12px; 
+  padding-bottom: 12px;
+  border: 1px solid #1570EF;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  background: #1570EF;
+  color: #FFFFFF;
+}
 
 
-/* These are media queries */
+
+
+/* media queries */
 
 
 @media(max-width:890px) {
@@ -165,6 +295,39 @@ main {
       gap: 2rem;
   }
 
+  .radio label {
+    width: 400px;
+  }
+
+  textarea {
+    width: 300px;
+  }
+
+  .contact-section {
+    width: 450px;
+    margin-left: 4rem;
+  }
+
+  form button {
+    width: 380px;
+  }
+
+  .contact-heading p {
+    font-size: 12px;
+  }
+
+  .name {
+    display: block;
+  }
+
+  .name input {
+    width: 300px;
+  }
+
+  #email {
+    width: 300px;
+  }
+
   .footer-content::before {
       bottom: 230px;
   }
@@ -174,10 +337,20 @@ main {
   }
 } 
 
+@media(max-width: 390px) {
+  .contact-section {
+    margin-left: 5rem;
+  }
+}
+
+@media(max-width: 360px) {
+  .contact-section {
+    margin-left: 7rem;
+  }
+}
+
 @media(max-width: 320px) {
   .links a {
       width: 300px;
   }
 }
-
-/* Media Queries begins here */
