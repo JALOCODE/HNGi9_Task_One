@@ -8,7 +8,7 @@ const Links = () => {
     <main>
         <div className="links">
             {links.map(LinkButtons)}
-            <Link to='/contact'>Contact Me</Link>
+            <Link Id= 'contact'  to='/contact'>Contact Me</Link>
         </div>
     </main>
   )
